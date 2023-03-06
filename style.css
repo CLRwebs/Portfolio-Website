@@ -197,7 +197,8 @@
 .portfolio-works {
     display: flex;
     gap: 1.25rem;
-    margin-left: clamp(5rem, 5vw, 5vw);
+    margin: auto;
+    padding-left: 5vw;
 
 }
 
@@ -205,7 +206,6 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-
 }
 
 
@@ -216,7 +216,6 @@
     background-position: center;
     background-size: cover;
     height: clamp(10rem, 10vw, 10vw);
-    width: clamp(15rem, 22.5vw, 22.5vw);
     transition: all 200ms ease;
     box-shadow: 0 0 10px 1px white;
 }
@@ -232,9 +231,6 @@ h2 {
     box-shadow: 0 0 10px 2px red;
 }
 
-.work1 img {
-    width: 100%;
-}
 
 .work1 {
     display: flex;
@@ -269,7 +265,7 @@ h2 {
 }
 
 .contact p {
-    font-size: clamp(2rem, 2vw, 2vw);
+    font-size: clamp(1.5rem, 1.5vw, 1.5vw);
 }
 
 .contact-form {
@@ -281,7 +277,7 @@ h2 {
 }
 
 textarea {
-    max-width: clamp(15rem, 50vw, 50vw);
+    max-width: clamp(15rem, 30vw, 30vw);
 }
 
 .contact-form * {
@@ -317,10 +313,18 @@ textarea {
 
 @media screen and (max-width: 1000px) {
 
+    html {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
     .portfolio h2,
-    .portfolio h3 {
+    .portfolio h3,
+    .portfolio-works {
         padding: 0;
     }
+
+
 
     .left-side-menu {
         display: none;
