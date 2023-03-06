@@ -132,7 +132,7 @@
     background: black;
     background-position: center;
     background-size: cover;
-    padding-left: clamp(7.5rem, 10vw, 10vw);
+    padding-left: clamp(7.5rem, 20vw, 20vw);
     padding-right: clamp(1rem, 10vw, 10vw);
     padding-block: clamp(5rem, 5vw, 5vw);
     display: grid;
@@ -183,7 +183,7 @@
 
 .portfolio {
     background-color: black;
-    padding-left: clamp(7.5rem, 10vw, 10vw);
+    padding-left: clamp(7.5rem, 20vw, 20vw);
     padding-right: clamp(1rem, 10vw, 10vw);
     padding-block: clamp(5rem, 5vw, 5vw);
     display: flex;
@@ -198,7 +198,7 @@
     display: flex;
     gap: 1.25rem;
     margin: auto;
-    padding-left: 5vw;
+    padding-left: clamp(7.5rem, 15vw, 15vw);
 
 }
 
@@ -311,6 +311,8 @@ textarea {
     font-size: clamp(2rem, 2vw, 2vw);
 }
 
+
+
 @media screen and (max-width: 1000px) {
 
     html {
@@ -381,5 +383,9 @@ textarea {
         display: flex;
         flex-direction: column;
         margin: 0;
+    }
+
+    .work1 {
+        width: clamp(10rem, 50vw, 50vw);
     }
 }
