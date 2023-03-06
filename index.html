@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Veress Krisztián - Portfolio</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-side-menu">
+            <div class="left-side-menu-logo">
+                / <span>V<span class="letter-red">K</span>. /</span>
+            </div>
+            <div class="left-side-menu-links">
+                <a href="#home" class="menu-item">HOME</a>
+                <a href="#about" class="menu-item">ABOUT</a>
+                <a href="#portfolio" class="menu-item">PORTFOLIO</a>
+                <a href="#contact" class="menu-item">CONTACT</a>
+            </div>
+            <div class="left-side-menu-socials">
+                <div class="socials-icon">
+                    <a><img src="./Images/icons8-discord-100.png"></a>
+                </div>
+                <div class="socials-icon">
+                    <a><img src="./Images/icons8-facebook-f-100.png"></a>
+                </div>
+                <div class="socials-icon">
+                    <a><img src="./Images/icons8-instagram-100.png"></a>
+                </div>
+                <div class="socials-icon">
+                    <a><img src="./Images/icons8-github-100.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="center-page-home" id="home">
+            <h1>Hey There, my name is</h1>
+            <span class="center-page-home-name"><span class="letter-white size-big">V</span>eress
+                <span class="size-big">K</span>risztián.</span>
+            <p class="center-page-home-paragraph">I'm a student at Neumann János University.</p>
+
+            <button class="center-page-home-button"><a href="#about">See More</a></button>
+        </div>
+        <section class="about" id="about">
+            <div class="about-image">
+                <h2>/ About Me. /</h2>
+                <img src="./Images/pfp2.jpg">
+            </div>
+            <div class="about-text">
+                <p>
+                    Hey. My name is Veress Krisztián I live in Bács-kiskun county, I am a student at Neumann János
+                    University. I am learning Engineering Informatics , this is my first year there. I finished my
+                    secondary school in 2022 in Informatics class and after it I took part in a OKJ course which gave me
+                    an IT system operator profession. I started to being more interested in the Front-End Development
+                    around 3rd grade in secondary school.<br><br> I got my first job after I graduated from seconadry
+                    school
+                    which was a simple landing page. I was quite excited because it was my first time working with a
+                    designer. Other than that I usually train myself with "copying" website templates. My favorite
+                    website for that is nicepage.com which has some quite nice templates to work with. Currenctly I am
+                    doing a Udemy course in my free time. If you would like to know more about me please feel free to
+                    contact me.
+                </p>
+
+                <div class="about-information">
+                    <div class="information">
+                        <div>Name: </div><span>Veress Krisztián</span>
+                    </div>
+                    <div class="information">
+                        <div>Age: </div><span>19</span>
+                    </div>
+                    <div class="information">
+                        <div>Phone number: </div><span>+36202065923</span>
+                    </div>
+                    <div class="information">
+                        <div>E-mail: </div><span class="information-email">veresskrisztian@protonmail.com</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="portfolio " id="portfolio">
+            <h2>/ Portfolio. /</h2>
+            <h3>Here is some of my work</h3>
+            <div class="portfolio-works">
+                <div class="work-col">
+                    <div class="work1">
+                        <a href="https://clrwebs.github.io/Application-Development-Website/" target="_blank">Application
+                            Development</a>
+                    </div>
+                    <div class="work1">
+                        <a href="https://clrwebs.github.io/Application-Development-Website/" target="_blank">Application
+                            Development</a>
+                    </div>
+                    <div class="work1">
+                        <a href="https://clrwebs.github.io/Application-Development-Website/" target="_blank">Application
+                            Development</a>
+                    </div>
+                </div>
+                <div class="work-col hidden">
+                    <div class="work1">
+                        <a href="https://clrwebs.github.io/Application-Development-Website/" target="_blank">Application
+                            Development</a>
+                    </div>
+                    <div class="work1">
+                        <a href="https://clrwebs.github.io/Application-Development-Website/" target="_blank">Application
+                            Development</a>
+                    </div>
+                    <div class="work1">
+                        <a href="https://clrwebs.github.io/Application-Development-Website/" target="_blank">Application
+                            Development</a>
+                    </div>
+                </div>
+                <div class="work-col hidden">
+                    <div class="work1">
+                        <a href="https://clrwebs.github.io/Application-Development-Website/" target="_blank">Application
+                            Development</a>
+                    </div>
+                    <div class="work1">
+                        <a href="https://clrwebs.github.io/Application-Development-Website/" target="_blank">Application
+                            Development</a>
+                    </div>
+                    <div class="work1">
+                        <a href="https://clrwebs.github.io/Application-Development-Website/" target="_blank">Application
+                            Development</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact" id="contact">
+            <h2>/ Contact. /</h2>
+            <p>
+                Please write me an Email if you would like to contact me:
+            </p>
+
+            <form action="https://formsubmit.co/your@email.com" method="POST" class="contact-form">
+                <textarea name="name" required placeholder="Enter your message">
+
+                </textarea>
+                <input type="email" name="email" required placeholder="Enter your Email">
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>

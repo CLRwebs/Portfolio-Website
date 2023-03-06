@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    color: white;
+}
+
+.left-side-menu {
+    background: linear-gradient(rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.9)), url('./Images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-block: clamp(3rem, 5vw, 5vw);
+    position: fixed;
+    height: 100vh;
+
+}
+
+.left-side-menu-logo {
+    padding-inline: clamp(1rem, 3vw, 3vw);
+    font-size: clamp(2rem, 2vw, 2vw);
+}
+
+.left-side-menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 1vw, 1vw);
+    border-bottom: 1px solid rgba(66, 66, 66, 0.9);
+    padding-inline: clamp(1rem, 3vw, 3vw);
+    padding-bottom: clamp(2rem, 2vw, 2vw);
+}
+
+.socials-icon a img {
+    width: clamp(2rem, 2vw, 2vw);
+}
+
+.left-side-menu-links a {
+    text-decoration: none;
+    color: white;
+    transition: all 200ms ease;
+    font-size: clamp(1rem, 1vw, 1vw);
+}
+
+.left-side-menu-socials {
+    padding-inline: clamp(1rem, 3vw, 3vw);
+    display: flex;
+    gap: 3px;
+    padding-block: clamp(1rem, 3vw, 3vw);
+}
+
+.letter-red {
+    color: red;
+}
+
+.size-big {
+    font-size: clamp(rem, 4vw, 4vw);
+}
+
+.center-page-home {
+    background: linear-gradient(rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)), url('./Images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    padding-left: clamp(7.5rem, 10vw, 10vw);
+}
+
+.center-page-home-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.center-page-home-paragraph {
+    font-size: clamp(1.25rem, 1.25vw, 1.25vw);
+}
+
+.center-page-home-name {
+    color: red;
+    font-size: clamp(3rem, 3vw, 3vw);
+}
+
+.left-side-menu-links a:hover {
+    color: red;
+    transition: all 200ms ease;
+}
+
+.socials-icon a img {
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.socials-icon a img:hover {
+    transform: scale(1.2);
+    transition: all 200ms ease;
+}
+
+.center-page-home-button {
+    font-size: clamp(1.125rem, 1.125vw, 1.125vw);
+    background-color: transparent;
+    border: 1px solid white;
+    padding-inline: clamp(1rem, 1vw, 1vw);
+    padding-block: clamp(.5rem, 10px, 10px);
+    color: white;
+    border-radius: .5em;
+    margin-top: 2rem;
+    transition: all 200ms ease;
+}
+
+.center-page-home-button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 1px;
+    transition: all 200ms ease;
+}
+
+.about {
+    background: black;
+    background-position: center;
+    background-size: cover;
+    padding-left: clamp(7.5rem, 10vw, 10vw);
+    padding-right: clamp(1rem, 10vw, 10vw);
+    padding-block: clamp(5rem, 5vw, 5vw);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.about-image {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.center-page-home h1 {
+    font-size: clamp(2rem, 2vw, 2vw);
+}
+
+.about-image h2 {
+    font-size: clamp(2rem, 2vw, 2vw);
+}
+
+.about-image img {
+    width: clamp(10rem, 25vw, 25vw);
+    border: 5px solid red;
+
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: clamp(1rem, 1.125vw, 1.125vw);
+}
+
+.information {
+    display: flex;
+    padding-bottom: 1rem;
+
+}
+
+
+.information div {
+    font-weight: 600;
+    width: 10rem;
+}
+
+.portfolio {
+    background-color: black;
+    padding-left: clamp(7.5rem, 10vw, 10vw);
+    padding-right: clamp(1rem, 10vw, 10vw);
+    padding-block: clamp(5rem, 5vw, 5vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10vw;
+    gap: clamp(2rem, 2vw, 2vw);
+}
+
+.portfolio-works {
+    display: flex;
+    gap: 1.25rem;
+    margin-left: clamp(5rem, 5vw, 5vw);
+}
+
+.work-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.work1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)), url('./Images/Képkivágás.PNG');
+    background-position: center;
+    background-size: cover;
+    height: clamp(10rem, 10vw, 10vw);
+    width: clamp(15rem, 22.5vw, 22.5vw);
+    transition: all 200ms ease;
+}
+
+.work1:hover {
+    transform: rotate(-10deg) scale(1.125);
+    transition: all 200ms ease;
+}
+
+.work1 img {
+    width: 100%;
+}
+
+.work1 {
+    display: flex;
+    align-items: flex-end;
+}
+
+.work1 a {
+    font-size: clamp(1.2rem, 1.2vw, 1.2vw);
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.portfolio h2,
+.portfolio h3 {
+    font-size: clamp(2rem, 2vw, 2vw);
+}
+
+.contact {
+    padding-left: 5vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    height: 100vh;
+    padding-block: clamp(5rem, 5vw, 5vw);
+}
+
+.contact p {
+    font-size: clamp(2rem, 2vw, 2vw);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 2rem;
+    align-items: center;
+}
+
+textarea {
+    max-width: clamp(15rem, 50vw, 50vw);
+}
+
+.contact-form * {
+    border: 3px solid red;
+    background-color: transparent;
+    padding-inline: clamp(1rem, 1vw, 1vw);
+    padding-block: clamp(1rem, 1vw, 1vw);
+    font-size: clamp(1rem, 1vw, 1vw);
+    color: white;
+    border-radius: 1em;
+    width: clamp(15rem, 30vw, 30vw);
+}
+
+.contact-form *:focus {
+    outline: 0;
+}
+
+.contact-form *::placeholder {
+    color: white;
+    font-size: clamp(1rem, 1vw, 1vw);
+}
+
+.contact-form button {
+    cursor: pointer;
+    font-size: clamp(1rem, 1vw, 1vw);
+    width: fit-content;
+    padding-inline: clamp(5rem, 5vw, 5vw);
+}
+
+.contact h2 {
+    font-size: clamp(2rem, 2vw, 2vw);
+}
+
+@media screen and (max-width: 800px) {
+
+
+    .left-side-menu {
+        display: none;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .about,
+    .center-page-home,
+    .portfolio,
+    .contact {
+        padding: 0;
+        padding-block: 5vw;
+        padding-inline: 10vw;
+    }
+
+    .contact {
+        text-align: center;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+    }
+
+
+    .about-image img {
+        margin: auto;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .information {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .information-email {
+        font-size: .75rem;
+    }
+
+
+    .portfolio-works {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+}
